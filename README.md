@@ -73,14 +73,9 @@ pip install -r requirements.txt
 ### 2-5. Model
 
 ```text
-pose/yolo/yolo26n-pose.pt
-pose/gcn/best_gcn.pt
+[`pose/yolo/yolo26n-pose.pt`](pose/yolo/yolo26n-pose.pt)
+[`pose/gcn/best_gcn.pt`](pose/gcn/best_gcn.pt)
 ```
-|---|---|
-| [`pose/yolo/yolo26n-pose.pt`](pose/yolo/yolo26n-pose.pt) | Residual GCN training |
-| [`pose/gcn/best_gcn.pt`](pose/gcn/best_gcn.pt) | GCN dataset generation |
-
----
 
 ### 2.4 Hardware Setup
 
