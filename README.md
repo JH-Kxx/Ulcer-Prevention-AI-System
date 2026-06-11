@@ -26,11 +26,13 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 </p>
 
 - #### Pose Estimation Pipeline
-  - 
+  - Capture real-time RGB images and estimate body keypoints, followed by GCN-based keypoint refinement.
+
 - #### Pressure Sensing Pipeline
-  -
+  - Acquire pressure sensor data and generate a smoothed body pressure heatmap through interpolation.
+
 - #### Pose & Pressure Alignment
-  -
+  - Temporally and spatially align pose keypoints with pressure maps for integrated risk analysis.
 
 ---
 
@@ -58,7 +60,7 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 ### 5-3. Demonstration
 
 <p align="center">
-  <img src="results/images/system_demo.png" width="950">
+  <img src="docs/dashboard/system_demo.png" width="950">
 </p>
 
 #### Real-Time Features
