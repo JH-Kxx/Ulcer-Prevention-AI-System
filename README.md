@@ -162,11 +162,9 @@ pose/gcn/best_gcn.pt
 - synchronized pose-pressure monitoring
 - real-time dashboard system
 
+---
 
-
-## 4. Usage
-
-### 4-1. Project Structure
+## 6. Project Structure
 
 ```text
 Pressure-Ulcer-Prevention-AI
