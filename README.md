@@ -22,7 +22,7 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 ## 2. Pipeline
 
 <p align="center">
-  <img src="docs/pipline/system_pipeline.png" width="1000">
+  <img src="docs/pipeline/system_pipeline.png" width="1000">
 </p>
 
 - #### Pose Estimation Pipeline
