@@ -1,6 +1,6 @@
 # Pose-Pressure Ulcer AI
 
-Real-Time Pressure Ulcer Prevention System using Pose Estimation and Pressure Sensing
+Real-Time Pressure Ulcer Prevention System using Pose Estimation and Pressure Sensing.
 
 ---
 
