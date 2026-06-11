@@ -55,7 +55,16 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 ## 5. Results
 ### 5-1. Perfomance Comparison
 
+| Dataset | Method | FPS | PCKh@0.5 | mAP@0.50 | MPJPE |
+|:-------:|:-------:|:---:|:--------:|:--------:|:-----:|
+| SLP | YOLO26s-Pose (Baseline) | 49.911 | 0.628 | 0.608 | 0.260 |
+| SLP | YOLO26s-Pose + GCN | **49.889** | **0.819** | **0.777** | **0.150** |
+
 ### 5-2. GCN Refinement Result
+
+<p align="center">
+  <img src="docs/gcn/gcn_refinement.png" width="950">
+</p>
 
 ### 5-3. Demonstration
 
