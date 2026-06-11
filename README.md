@@ -38,22 +38,9 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 
 ---
 
-## 2. Setup
+## 2. Environment Setup
 
-### 2-1. Environment Setup
-
-#### Requirements
-
-- Python 3.10
-- PyTorch
-- CUDA 12.8
-- OpenCV
-- Flask
-- Ultralytics YOLO
-
----
-
-#### Recommended Environment
+### Recommended Environment
 
 | Category | Specification |
 |---|---|
@@ -62,18 +49,15 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 | PyTorch | 2.7.1+cu128 |
 | CUDA | 12.8 |
 
----
 
-#### Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/JH-kxx/Pose-Pressure-Ulcer-AI.git
 cd Pose-Pressure-Ulcer-AI
 ```
 
----
-
-#### Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -81,7 +65,7 @@ pip install -r requirements.txt
 
 ---
 
-### 2-2. Hardware Setup
+### Hardware Setup
 
 #### Hardware Components
 
