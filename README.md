@@ -1,11 +1,9 @@
 # Ulcer-Prevention-AI-System
-
 Real-Time Pressure Ulcer Prevention System using Pose Estimation and Pressure Sensing.
 
 ---
 
 ## 1. Project Overview
-
 Pressure ulcers can occur when patients remain in the same posture for long periods of time.  
 This project proposes a real-time monitoring system that combines:
 
@@ -43,7 +41,6 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 <td valign="top">
 
 ### Environment
-
 | Category | Specification |
 |-----------|--------------|
 | OS | Windows 11 |
@@ -56,7 +53,6 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 <td valign="top">
 
 ### Hardware Requirements
-
 | Component | Description |
 |------------|------------|
 | Camera | USB Camera |
@@ -69,18 +65,15 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 </tr>
 </table>
 
-#### Installation
-
+### Installation
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Dataset
-
+### Dataset
 The GCN model was trained using the **SLP (Sleep Pose) Dataset**, a large-scale multimodal benchmark designed for in-bed human pose estimation.
 
-##### Dataset Repository
-
+#### Dataset Repository
 - https://github.com/ostadabbas/SLP-Dataset-and-Code
 
 ---
@@ -88,13 +81,11 @@ The GCN model was trained using the **SLP (Sleep Pose) Dataset**, a large-scale 
 ## 4. Usage
 
 ### 4-1. GCN Training
-
 There are two ways to use the GCN model.
 
 #### Option 1. Train Your Own GCN Model
 
 ##### Training Workflow
-
 ```text
 SLP Dataset
     ↓
@@ -110,29 +101,22 @@ best_gcn.pt
 ```
 
 ##### Generate GCN Dataset
-
 ```bash
 python pose/gcn/generate_gcn_dataset.py
 ```
 
 ##### Train GCN
-
 ```bash
 python pose/gcn/train_gcn_rgb.py
 ```
 
----
-
 #### Option 2. Use the Pretrained Model
-
 If you do not want to train the model from scratch, you can directly use the pretrained checkpoint provided in this repository.
 
 ##### Pretrained Checkpoint
-
 ```text
 pose/gcn/best_gcn.pt
 ```
----
 
 ### 4-2. Pressure Sensing
 
@@ -145,36 +129,27 @@ The pressure sensor is installed beneath the bed surface and collects real-time 
 ![Pressure Sensor Bed](docs/hardware/pressure_sensor_bed.jpg.png)
 
 
-#### Arduino Firmware
-
+##### Arduino Firmware
 Upload the pressure sensor acquisition firmware to the Arduino Mega 2560.
-
 ```text
 pressure/arduino/pressure_sensor_test.ino
 ```
 
-#### Pressure Heatmap Visualization
-
+##### Pressure Heatmap Visualization
 Run the pressure heatmap visualization module.
-
 ```bash
 python pressure/pressure_map/pressure_test.py
 ```
 
----
-
 ### 4-3. Dashboard
-
 The dashboard combines the trained GCN model and pressure sensing module into a single monitoring dashboard.
 
-#### Required Files
-
+##### Required Files
 ```text
 dashboard/pressure_monitor_app.zip
 ```
 
-#### Run Dashboard
-
+##### Run Dashboard
 ```bash
 python app.py
 ```
@@ -256,8 +231,6 @@ Pressure-Ulcer-Prevention-AI
 ├── LICENSE
 └── .gitignore
 ```
-
-#### Directory Description
 
 | Directory                | Description                                                   |
 | ------------------------ | ------------------------------------------------------------- |
