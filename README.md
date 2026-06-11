@@ -132,8 +132,52 @@ If you do not want to train the model from scratch, you can directly use the pre
 ```text
 pose/gcn/best_gcn.pt
 ```
+---
 
-### 4-2. Full System Execution
+### 4-2. Pressure Sensing
+
+Connect 16 pressure sensors to the Arduino Mega 2560.
+
+![Arduino Connection](docs/hardware/arduino_connection.jpg.png)
+
+The pressure sensor is installed beneath the bed surface and collects real-time data.
+
+![Pressure Sensor Bed](docs/hardware/pressure_sensor_bed.jpg.png)
+
+
+#### Arduino Firmware
+
+Upload the pressure sensor acquisition firmware to the Arduino Mega 2560.
+
+```text
+pressure/arduino/pressure_sensor_test.ino
+```
+
+#### Pressure Heatmap Visualization
+
+Run the pressure heatmap visualization module.
+
+```bash
+python pressure/pressure_map/pressure_test.py
+```
+
+---
+
+### 4-3. Dashboard
+
+The dashboard combines the trained GCN model and pressure sensing module into a single monitoring dashboard.
+
+#### Required Files
+
+```text
+dashboard/pressure_monitor_app.zip
+```
+
+#### Run Dashboard
+
+```bash
+python app.py
+```
 ---
 
 ## 5. Results
@@ -156,11 +200,12 @@ pose/gcn/best_gcn.pt
   <img src="docs/dashboard/system_demo.png" width="950">
 </p>
 
-#### Real-Time Features
-- patient pose estimation
-- pressure heatmap visualization
-- synchronized pose-pressure monitoring
-- real-time dashboard system
+
+#### Output
+- Real-Time Pose Estimation (YOLO + GCN)
+- Pressure Heatmap Visualization
+- Pose–Pressure Synchronization
+- Integrated Monitoring Dashboard
 
 ---
 
