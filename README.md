@@ -17,8 +17,6 @@ This project proposes a real-time monitoring system that combines:
 
 The goal is to monitor posture and pressure concentration simultaneously for early ulcer-risk analysis.
 
----
-
 <p align="center">
   <img src="docs/pipline/system_pipeline.png" width="1000">
 </p>
@@ -31,9 +29,7 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
   <img src="results/images/system_demo.png" width="950">
 </p>
 
----
-
-### Real-Time Features
+#### Real-Time Features
 
 - patient pose estimation
 - pressure heatmap visualization
