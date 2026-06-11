@@ -65,8 +65,10 @@ pip install -r requirements.txt
 
 ### 2-4. Dataset 
 
+```bash
 - SLP Dataset  
   https://github.com/ostadabbas/SLP-Dataset-and-Code
+```
 
 ### 2-5. Model
 
