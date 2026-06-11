@@ -29,7 +29,7 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
   <img src="results/images/system_demo.png" width="950">
 </p>
 
-#### Real-Time Features
+### Real-Time Features
 
 - patient pose estimation
 - pressure heatmap visualization
@@ -40,7 +40,7 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 
 ## 2. Environment Setup
 
-### Recommended Environment
+### 2-1. Recommended Environment
 
 | Category | Specification |
 |---|---|
@@ -50,24 +50,32 @@ The goal is to monitor posture and pressure concentration simultaneously for ear
 | CUDA | 12.8 |
 
 
-### Clone Repository
+### 2-2. Clone Repository
 
 ```bash
 git clone https://github.com/JH-kxx/Pose-Pressure-Ulcer-AI.git
 cd Pose-Pressure-Ulcer-AI
 ```
 
-### Install Dependencies
+### 2-3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 2-4. Dataset 
 
-### Hardware Setup
+- SLP Dataset  
+  https://github.com/ostadabbas/SLP-Dataset-and-Code
 
-#### Hardware Components
+### 2-5. Model
+
+```text
+pose/yolo/yolo26n-pose.pt
+pose/gcn/best_gcn.pt
+```
+
+### 2.4 Hardware Setup
 
 | Component | Description |
 |---|---|
@@ -75,58 +83,6 @@ pip install -r requirements.txt
 | Pressure Sensor | Pressure distribution measurement |
 | Arduino | Sensor communication |
 | PC / GPU Server | Real-time inference |
-
----
-
-#### Arduino Connection
-
-<p align="center">
-  <img src="docs/hardware/arduino_connection.jpg.png" width="700">
-</p>
-
----
-
-#### Pressure Sensor Bed
-
-<p align="center">
-  <img src="docs/hardware/pressure_sensor_bed.jpg.png" width="700">
-</p>
-
----
-
-#### Pressure Heatmap
-
-<p align="center">
-  <img src="docs/hardware/pressure_heatmap.png" width="700">
-</p>
-
----
-
-### 2-3. Dataset & Model
-
-#### Dataset
-
-- SLP Dataset  
-  https://github.com/ostadabbas/SLP-Dataset-and-Code
-
----
-
-#### Model Weights
-
-Place model files inside:
-
-```text
-pose/yolo/
-pose/gcn/
-```
-
-Required files:
-
-```text
-yolo26n-pose.pt
-best_gcn.pt
-```
-
 ---
 
 # 3. System Pipeline
