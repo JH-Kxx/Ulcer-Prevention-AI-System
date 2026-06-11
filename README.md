@@ -72,10 +72,10 @@ pip install -r requirements.txt
 
 ### 2-5. Model
 
-
+```bash
 [`pose/yolo/yolo26n-pose.pt`](pose/yolo/yolo26n-pose.pt)
 [`pose/gcn/best_gcn.pt`](pose/gcn/best_gcn.pt)
-
+```
 
 ### 2.4 Hardware Setup
 
